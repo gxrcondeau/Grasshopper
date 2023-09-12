@@ -1,11 +1,9 @@
 ### CODEWARS
-Grade book
-Complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade. <br/>
+Given an array of integers. <br/>
  <br/>
-Numerical Score	Letter Grade
-90 <= score <= 100	'A' <br/>
-80 <= score < 90	'B' <br/>
-70 <= score < 80	'C' <br/>
-60 <= score < 70	'D' <br/>
-0 <= score < 60	'F' <br/>
-Tested values are all between 0 and 100. Theres is no need to check for negative values or values greater than 100.
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative. <br/>
+ <br/>
+If the input is an empty array or is null, return an empty array. <br/>
+ <br/>
+## Example
+For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
