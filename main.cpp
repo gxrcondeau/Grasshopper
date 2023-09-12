@@ -1,21 +1,13 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
-vector<int> countPositivesSumNegatives(vector<int> input)
-{
-    vector<int> result = {0, 0};
-    if (input != vector<int>{}) {
-        for (int i = 0; i < input.size(); i++) {
-            input.at(i) > 0 ? result.at(0) += 1 : result.at(1) += input.at(i);
-        }
-    }
-    else return {};
-    return result;
+char getGrade(int a, int b, int c) {
+    return ((a + b + c) / 3) >= 90 ? 'A' : ((a + b + c) / 3)  >= 80 ? 'B' : ((a + b + c) / 3) >= 70 ? 'C' : ((a + b + c) / 3) >= 60 ? 'D' : 'F';
 }
 
 int main() {
-    countPositivesSumNegatives({1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15});
+    char a = getGrade(95, 93, 90);
+    cout << a;
     return 0;
 }
